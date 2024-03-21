@@ -192,10 +192,10 @@ const TotalAmountSection = () => {
         </div>
 
         <div className='totalamountsection17'>
-          {/* <h3>Statistics</h3> */}
-          <h3>Rolling Reserve</h3>
+          <h3>Statistics</h3>
+          {/* <h3>Rolling Reserve</h3> */}
 
-          {/* <div className='totalamountsection18'>
+          <div className='totalamountsection18'>
             <div className='totalamountsection19'>
               <div id="chart">
                 <ReactApexChart options={chartData.options} series={chartData.series} type="bar" height={350} />
@@ -208,9 +208,9 @@ const TotalAmountSection = () => {
               </div>
               <div id="html-dist"></div>
             </div>
-          </div> */}
+          </div>
 
-          <LatestTransactions/>
+          {/* <LatestTransactions/> */}
         </div>
       </div>
     </>

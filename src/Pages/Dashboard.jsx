@@ -15,9 +15,9 @@ const Dashboard = () => {
                     <TotalAmountSection />
                 </div>
 
-                {/* <div className='dass2'>
-                    <LatestTransactions/>
-                </div> */}
+                <div className='dass2'>
+                    <LatestTransactions />
+                </div>
             </div>
 
         </>
