@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiFillCaretDown, AiOutlineCaretDown } from "react-icons/ai";
-import { UserInfoPopUp } from "../Components/Dashboard/UserInfoPopUp";
+// import { UserInfoPopUp } from "../Components/Dashboard/UserInfoPopUp";
 import { SideBar } from "../Components/SideBar";
 import { TotalAmountSection } from "../Components/TotalAmountSection";
 import styles from "../Styles/RefundRequest.module.css";
@@ -44,7 +44,7 @@ export const RefundRequest = () => {
       />
 
       <div className={styles.topDiv}>
-        <UserInfoPopUp />
+        {/* <UserInfoPopUp /> */}
         <SideBar />
         <div className={styles.TotalAmountMainDiv}>
           <div>

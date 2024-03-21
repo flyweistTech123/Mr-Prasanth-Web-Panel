@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiFillEye, AiOutlineCaretDown } from "react-icons/ai";
-import { UserInfoPopUp } from "../Components/Dashboard/UserInfoPopUp";
+// import { UserInfoPopUp } from "../Components/Dashboard/UserInfoPopUp";
 import { SideBar } from "../Components/SideBar";
 import { TotalAmountSection } from "../Components/TotalAmountSection";
 import styles from "../Styles/Dashboard.module.css";
@@ -64,7 +64,7 @@ export const OpenBanking = () => {
       />
       <DeclineModal OpenModal={declineModal} HandleModal={HandleDecline} />
       <div className={styles.topDiv}>
-        <UserInfoPopUp />
+        {/* <UserInfoPopUp /> */}
         <SideBar />
         <div className={styles.TotalAmountMainDiv}>
           <div>
