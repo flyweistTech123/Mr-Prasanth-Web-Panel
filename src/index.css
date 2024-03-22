@@ -16,37 +16,29 @@ code {
   display: none;
 }
 
-
-
 /* Dashboard */
 
-.dass{
+.dass {
   background-color: #f4f4f4;
-  padding-bottom: 100px;
+  padding-top: 30px;
 }
 
-.dass1{
+.dass1 {
   display: flex;
+  gap: 10px;
   width: 95%;
   margin: auto;
-  gap: 10px;
-  margin-top: 20px;
+  justify-content: space-between;
 }
 
-
-.dass2{
+.dass2 {
   margin-top: 50px;
 }
 
-
-
-
 /* totalamountsection19 */
 
-
-
-
 .totalamountsection1 {
+  width: 80%;
 }
 
 .totalamountsection2 {
@@ -55,7 +47,7 @@ code {
 }
 
 .totalamountsection3 {
-  width: 80%;
+  width: 60%;
   height: 124px;
   background-color: #ffffff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -67,7 +59,7 @@ code {
   gap: 20px;
 }
 
-.totalamountsection4{
+.totalamountsection4 {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -91,13 +83,12 @@ code {
   margin: 0;
 }
 
-
-.totalamountsection5{
+.totalamountsection5 {
   display: flex;
   gap: 20px;
 }
 
-.totalamountsection5 h4{
+.totalamountsection5 h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -106,9 +97,7 @@ code {
   margin: 0;
 }
 
-
-
-.totalamountsection6{
+.totalamountsection6 {
   width: 383px;
   height: 124px;
   background-color: #ffffff;
@@ -118,8 +107,7 @@ code {
   flex-direction: column;
 }
 
-
-.totalamountsection6 h6{
+.totalamountsection6 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 24px;
@@ -130,8 +118,7 @@ code {
   padding-top: 10px;
 }
 
-
-.totalamountsection6 h3{
+.totalamountsection6 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -143,41 +130,34 @@ code {
   cursor: pointer;
 }
 
-
-
-.totalamountsection7{
+.totalamountsection7 {
   display: flex;
   gap: 10px;
   margin-top: 30px;
 }
 
-
-
-.totalamountsection8{
+.totalamountsection8 {
   width: 330px;
   height: 204px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
 }
 
-
-.totalamountsection9{
+.totalamountsection9 {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
   gap: 10px;
 }
 
-
-.totalamountsection10{
+.totalamountsection10 {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-
-.totalamountsection10 h6{
+.totalamountsection10 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 24px;
@@ -186,12 +166,11 @@ code {
   margin: 0;
 }
 
-
-.totalamountsection11{
+.totalamountsection11 {
   display: flex;
   justify-content: space-around;
 }
-.totalamountsection11 h6{
+.totalamountsection11 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 32px;
@@ -200,19 +179,19 @@ code {
   margin: 0;
 }
 
-.totalamountsection12{
+.totalamountsection12 {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.totalamountsection13{
+.totalamountsection13 {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.totalamountsection13 h6{
+.totalamountsection13 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -222,36 +201,31 @@ code {
   text-decoration: underline;
 }
 
-
-.totalamountsection14{
+.totalamountsection14 {
   width: 17px;
   height: 17px;
   border-radius: 50%;
-  background-color: #007C35;
+  background-color: #007c35;
 }
 
-.totalamountsection15{
+.totalamountsection15 {
   width: 17px;
   height: 17px;
   border-radius: 50%;
-  background-color: #F6B100;
+  background-color: #f6b100;
 }
-.totalamountsection16{
+.totalamountsection16 {
   width: 17px;
   height: 17px;
   border-radius: 50%;
-  background-color: #DD0606;
+  background-color: #dd0606;
 }
 
-
-
-.totalamountsection17{
+.totalamountsection17 {
   margin-top: 10px;
-
 }
 
-
-.totalamountsection17 h3{
+.totalamountsection17 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 32px;
@@ -260,7 +234,7 @@ code {
   margin: 0;
 }
 
-.totalamountsection17 h5{
+.totalamountsection17 h5 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -271,45 +245,36 @@ code {
   padding-left: 40px;
 }
 
-
-.totalamountsection18{
+.totalamountsection18 {
   display: flex;
   gap: 10px;
   margin-top: 10px;
 }
 
-
-.totalamountsection19{
+.totalamountsection19 {
   width: 500px;
   height: 350px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
 }
 
-
-.totalamountsection20{
+.totalamountsection20 {
   width: 95%;
   margin: auto;
   margin-top: 30px;
 }
 
-
-
-
-
 /* LatestTransactions */
 
-
-.latesttransactions2{
+.latesttransactions2 {
   display: flex;
   justify-content: space-between;
   width: 98%;
   margin: auto;
 }
 
-
-.latesttransactions2 h6{
+.latesttransactions2 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 24px;
@@ -318,54 +283,47 @@ code {
   margin: 0;
 }
 
-
-.latesttransactions3{
+.latesttransactions3 {
   display: flex;
   gap: 20px;
   cursor: pointer;
 }
 
-
-.latesttransactions3 button{
+.latesttransactions3 button {
   width: 90px;
   height: 32px;
   border: none;
   outline: none;
   border-radius: 4px;
-  background-color: #2A3A8F;
+  background-color: #2a3a8f;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
 
-
-
-.latesttransactions4{
-  border-top: 2px solid #D9D9D9;
+.latesttransactions4 {
+  border-top: 2px solid #d9d9d9;
   width: 98%;
   margin: auto;
   margin-top: 10px;
 }
 
-
-.latesttransactions4 table{
+.latesttransactions4 table {
   width: 100%;
   margin-top: 20px;
 }
 
-
-.latesttransactions4 table tr{
+.latesttransactions4 table tr {
   text-align: center;
 }
 
-
-.latesttransactions4 table th{
+.latesttransactions4 table th {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -373,9 +331,7 @@ code {
   color: #000000;
 }
 
-
-
-.latesttransactions4 table td{
+.latesttransactions4 table td {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -385,16 +341,13 @@ code {
   cursor: pointer;
 }
 
-
-
-.latesttransactions5{
+.latesttransactions5 {
   text-align: end;
   margin-top: 20px;
   cursor: pointer;
 }
 
-
-.latesttransactions5 p{
+.latesttransactions5 p {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -404,23 +357,19 @@ code {
   margin: 0;
 }
 
-
-
-
 /* Modal */
 
-.paymentModal1{
-
+.paymentModal1 {
 }
 
-.paymentModal2{
-  border-bottom: 1px solid #D9D9D9;
+.paymentModal2 {
+  border-bottom: 1px solid #d9d9d9;
   height: 58px;
   display: flex;
   align-items: center;
 }
 
-.paymentModal2 h6{
+.paymentModal2 h6 {
   font-family: "Mulish", sans-serif;
   font-weight: 500;
   font-size: 25px;
@@ -430,33 +379,31 @@ code {
   cursor: pointer;
 }
 
-
-.paymentModal22{
+.paymentModal22 {
   height: 58px;
   display: flex;
   align-items: center;
 }
 
-.paymentModal22:hover{
+.paymentModal22:hover {
   background-color: #003466;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.paymentModal22 h6:hover{
-  color: #FFFFFF;
+.paymentModal22 h6:hover {
+  color: #ffffff;
 }
 
-.paymentModal2 h6:hover{
-  color: #FFFFFF;
+.paymentModal2 h6:hover {
+  color: #ffffff;
 }
 
-
-.paymentModal2:hover{
+.paymentModal2:hover {
   background-color: #003466;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.paymentModal22 h6{
+.paymentModal22 h6 {
   font-family: "Mulish", sans-serif;
   font-weight: 500;
   font-size: 25px;
@@ -466,7 +413,6 @@ code {
   cursor: pointer;
 }
 
-
-.paymentModal3{
+.paymentModal3 {
   text-decoration: none;
 }
