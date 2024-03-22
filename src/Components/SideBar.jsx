@@ -16,8 +16,8 @@ export const SideBar = () => {
           <h1>Pooja Sharma</h1>
           <p>ID:#202031232</p>
           <div className={styles.TotalBudgetDiv}>
-            <h1>&#x20b9;</h1>
-            <h1>10000</h1>
+            {/* <h1 style={{fontSize:'20px'}}>&#x20b9;</h1> */}
+            <h1>₹ 10000</h1>
           </div>
           <p>Monthly Budget</p>
         </div>

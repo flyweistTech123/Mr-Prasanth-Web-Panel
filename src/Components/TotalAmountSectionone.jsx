@@ -6,15 +6,15 @@ import user1 from '../Assets/vector1.png'
 import LatestTransactions from './LatestTransactions';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
-
+import { Link} from 'react-router-dom';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Popover from 'react-bootstrap/Popover';
 
 
 
 
 const TotalAmountSectionone = () => {
     const [modalShow, setModalShow] = React.useState(false);
-
     const [selectedService, setSelectedService] = useState('');
 
     const handleServiceSelection = (service) => {
@@ -22,49 +22,71 @@ const TotalAmountSectionone = () => {
         setModalShow(false); // Close the modal after selection
     };
 
-    function PaymentModal(props) {
+    // function PaymentModal(props) {
 
 
-        return (
-            <>
-                <Modal
-                    {...props}
-                    size="md"
-                    aria-labelledby="contained-modal-title-vcenter"
-                    centered
-                    style={{ top: '70%', left: '80%', transform: 'translate(-50%, -50%)', width: '435px', height: '221px', borderRadius: '6px', overflow: 'hidden' }}
-                >
-                    <Modal.Body>
-                        <div className='paymentModal1'>
-                            <Link to={'/dashboard'} className='paymentModal3'>
-                                <div className='paymentModal2' onClick={() => handleServiceSelection('Credit Card Processing')}>
-                                    <h6>Credit Card Processing</h6>
-                                </div>
-                            </Link>
-                            <Link to={'/open-banking-service'} className='paymentModal3'>
-                                <div className='paymentModal2' onClick={() => handleServiceSelection('Open Banking Service')}>
-                                    <h6>Open Banking Service</h6>
-                                </div>
-                            </Link>
-                            <Link to={'/crypto-payment-proccessing'} className='paymentModal3'>
-                                <div className='paymentModal22' onClick={() => handleServiceSelection('Crypto payment processing')}>
-                                    <h6>Crypto payment processing</h6>
-                                </div>
-                            </Link>
+    //     return (
+    //         <>
+    //             <Modal
+    //                 {...props}
+    //                 size="md"
+    //                 aria-labelledby="contained-modal-title-vcenter"
+    //                 centered
+    //                 style={{ top: '70%', left: '80%', transform: 'translate(-50%, -50%)', width: '435px', height: '221px', borderRadius: '6px', overflow: 'hidden' }}
+    //             >
+    //                 <Modal.Body>
+    //                     <div className='paymentModal1'>
+    //                         <Link to={'/dashboard'} className='paymentModal3'>
+    //                             <div className='paymentModal2' onClick={() => handleServiceSelection('Credit Card Processing')}>
+    //                                 <h6>Credit Card Processing</h6>
+    //                             </div>
+    //                         </Link>
+    //                         <Link to={'/open-banking-service'} className='paymentModal3'>
+    //                             <div className='paymentModal2' onClick={() => handleServiceSelection('Open Banking Service')}>
+    //                                 <h6>Open Banking Service</h6>
+    //                             </div>
+    //                         </Link>
+    //                         <Link to={'/crypto-payment-proccessing'} className='paymentModal3'>
+    //                             <div className='paymentModal22' onClick={() => handleServiceSelection('Crypto payment processing')}>
+    //                                 <h6>Crypto payment processing</h6>
+    //                             </div>
+    //                         </Link>
+    //                     </div>
+    //                 </Modal.Body>
+    //             </Modal>
+    //         </>
+    //     );
+    // }
+
+
+    const popover = (
+        <Popover id="popover-basic" style={{ width: '500px' }}>
+            {/* <Popover.Header as="h3">Popover right</Popover.Header> */}
+            <Popover.Body style={{ width: '290px', backgroundColor: "#D9D9D9" }}>
+                <div className='paymentModal1'>
+                    <Link to={'/dashboard'} className='paymentModal3'>
+                        <div className='paymentModal2' onClick={() => handleServiceSelection('Credit Card Processing')}>
+                            <h6>Credit Card Processing</h6>
                         </div>
-                    </Modal.Body>
-                </Modal>
-            </>
-        );
-    }
+                    </Link>
+                    <Link to={'/open-banking-service'} className='paymentModal3'>
+                        <div className='paymentModal2' onClick={() => handleServiceSelection('Open Banking Service')}>
+                            <h6>Open Banking Service</h6>
+                        </div>
+                    </Link>
+                    <Link to={'/crypto-payment-proccessing'} className='paymentModal3'>
+                        <div className='paymentModal2' onClick={() => handleServiceSelection('Crypto payment processing')}>
+                            <h6>Crypto payment processing</h6>
+                        </div>
+                    </Link>
+                </div>
+            </Popover.Body>
+        </Popover>
+    );
 
 
     return (
         <>
-            <PaymentModal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-            />
             <div className='totalamountsection1'>
                 <div className='totalamountsection2'>
                     <div className='totalamountsection3' >
@@ -80,10 +102,12 @@ const TotalAmountSectionone = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='totalamountsection6' onClick={() => setModalShow(true)}>
-                        <h6>Current Service:</h6>
-                        <h3>{selectedService || 'Select a Service'}<TiArrowSortedDown /></h3>
-                    </div>
+                    <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
+                        <div className='totalamountsection6'>
+                            <h6>Current Service:</h6>
+                            <h3>{selectedService || 'Select a Service'}<TiArrowSortedDown /></h3>
+                        </div>
+                    </OverlayTrigger>
                 </div>
                 <div className='totalamountsection7'>
                     <div className='totalamountsection8'>

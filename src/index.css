@@ -48,9 +48,9 @@ code {
 
 .totalamountsection3 {
   width: 60%;
-  height: 124px;
+  height: 100px;
   background-color: #ffffff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
   border: 1px solid #0034664d;
   border-radius: 12px;
   display: flex;
@@ -68,7 +68,7 @@ code {
 .totalamountsection4 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 36px;
   color: #333131;
   margin: 0;
@@ -77,8 +77,8 @@ code {
 .totalamountsection4 h5 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 25px;
-  line-height: 48px;
+  font-size: 20px;
+  line-height: 36px;
   color: #003466;
   margin: 0;
 }
@@ -91,17 +91,17 @@ code {
 .totalamountsection5 h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 48px;
+  font-size: 18px;
+  line-height: 36px;
   color: #333131;
   margin: 0;
 }
 
 .totalamountsection6 {
   width: 383px;
-  height: 124px;
+  height: 100px;
   background-color: #ffffff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -110,7 +110,7 @@ code {
 .totalamountsection6 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
   color: #000000;
   margin: 0;
@@ -121,7 +121,7 @@ code {
 .totalamountsection6 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 36px;
   color: #000000;
   margin: 0;
@@ -133,12 +133,12 @@ code {
 .totalamountsection7 {
   display: flex;
   gap: 10px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .totalamountsection8 {
   width: 330px;
-  height: 204px;
+  height: 190px;
   background-color: #ffffff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
@@ -148,7 +148,7 @@ code {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  gap: 10px;
+  gap: 2px;
 }
 
 .totalamountsection10 {
@@ -160,10 +160,15 @@ code {
 .totalamountsection10 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
   color: #000000;
   margin: 0;
+}
+
+.totalamountsection10 img{
+  width: 30px;
+  height: 30px;
 }
 
 .totalamountsection11 {
@@ -173,10 +178,11 @@ code {
 .totalamountsection11 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 48px;
   color: #000000;
   margin: 0;
+  /* padding-right: 30px; */
 }
 
 .totalamountsection12 {
@@ -194,7 +200,7 @@ code {
 .totalamountsection13 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   color: #000000;
   margin: 0;
@@ -228,7 +234,7 @@ code {
 .totalamountsection17 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 48px;
   color: #000000;
   margin: 0;
@@ -237,7 +243,7 @@ code {
 .totalamountsection17 h5 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 48px;
   color: #000000;
   margin: 0;
@@ -265,6 +271,16 @@ code {
   margin-top: 30px;
 }
 
+
+.totalamountsection21{
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  color: red;
+}
+
 /* LatestTransactions */
 
 .latesttransactions2 {
@@ -277,7 +293,7 @@ code {
 .latesttransactions2 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
   color: #333131;
   margin: 0;
@@ -326,7 +342,7 @@ code {
 .latesttransactions4 table th {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24.2px;
   color: #000000;
 }
@@ -334,7 +350,7 @@ code {
 .latesttransactions4 table td {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24.2px;
   color: #000000;
   padding-top: 20px;
@@ -363,8 +379,8 @@ code {
 }
 
 .paymentModal2 {
-  border-bottom: 1px solid #d9d9d9;
-  height: 58px;
+  border-bottom: 1px solid #140404;
+  height: 30px;
   display: flex;
   align-items: center;
 }
@@ -372,7 +388,7 @@ code {
 .paymentModal2 h6 {
   font-family: "Mulish", sans-serif;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 40.16px;
   color: #333333;
   margin: 0;
@@ -380,7 +396,7 @@ code {
 }
 
 .paymentModal22 {
-  height: 58px;
+  height: 30px;
   display: flex;
   align-items: center;
 }
@@ -406,7 +422,7 @@ code {
 .paymentModal22 h6 {
   font-family: "Mulish", sans-serif;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 40.16px;
   color: #333333;
   margin: 0;

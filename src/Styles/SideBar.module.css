@@ -1,5 +1,5 @@
 .SideBarMain {
-  width: 30%;
+  width: 20%;
   height: 789px;
   background: #ffffff;
   border: 1px solid #d9d9d9;
@@ -12,7 +12,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 20px;
   margin-top: 5px;
   letter-spacing: -0.28px;
 }
@@ -26,23 +26,23 @@
   text-align: center;
 }
 .SideBarMain > div > div > img {
-  width: 120px;
-  height: 121px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
 }
 .SideBarMain > div > div > h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: -0.28px;
 }
 .SideBarMain > div > div > p {
   font-family: "Poppins";
   font-style: normal;
   margin-top: -10px;
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 15px;
   line-height: 30px;
   letter-spacing: -0.28px;
   color: rgba(0, 0, 0, 0.5);
@@ -51,21 +51,21 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  margin: 15px;
+  margin: 10px;
 }
 .TotalBudgetDiv > h1:first-child {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 72px;
+  font-size: 30px;
+  line-height: normal;
   letter-spacing: -0.28px;
 }
 .TotalBudgetDiv > h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 20px;
   line-height: 72px;
   margin: 0;
   letter-spacing: -0.28px;
@@ -73,16 +73,16 @@
 .LinkBox {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .LinkBox > a {
   text-decoration: none;
 }
 .active {
-  width: 280px;
-  height: 65px;
-  padding-left: 10px;
-  padding-right: 10px;
+  width: auto;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   background: #003466;
   box-shadow: 0px 0px 32px 4px rgba(0, 52, 102, 0.25);
   border-radius: 12px;
@@ -94,7 +94,7 @@
 }
 .unactive {
   width: 250px;
-  height: 65px;
+  height: 50px;
   display: flex;
 
   color: #003466;
@@ -107,8 +107,8 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: normal;
   letter-spacing: -0.28px;
   margin: 0;
 }
@@ -117,8 +117,8 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: normal;
   letter-spacing: -0.28px;
   margin: 0;
 }

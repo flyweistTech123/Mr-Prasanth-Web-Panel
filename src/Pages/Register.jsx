@@ -44,9 +44,9 @@ export const Register = () => {
                   <option value="">Eng</option>
                 </select>
               </div>
+              <button onClick={Handleregister} className="button122">CONTINUE</button>
             </div>
           </div>
-          <button onClick={Handleregister}>CONTINUE</button>
         </div>
         <RegisterImg />
       </div>

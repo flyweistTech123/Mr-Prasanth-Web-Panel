@@ -63,20 +63,21 @@ export const RegisterTwo = () => {
                 <span>Recipient Name</span>
                 <input type="number" />
               </div>
+              <div className={styles.checkBox}>
+                <input type="checkbox" />
+                <p>
+                  By Clicking here your agree with our{" "}
+                  <Link to={"/"}>
+                    Terms &<br />
+                    Condition
+                  </Link>
+                  &nbsp; and also <Link to={"/"}> Privacy Policy</Link>
+                </p>
+              </div>
+              <button onClick={Handleregister}>Verify</button>
             </div>
           </div>
-          <div className={styles.checkBox}>
-            <input type="checkbox" />
-            <p>
-              By Clicking here your agree with our{" "}
-              <Link to={"/"}>
-                Terms &<br />
-                Condition
-              </Link>
-              &nbsp; and also <Link to={"/"}> Privacy Policy</Link>
-            </p>
-          </div>
-          <button onClick={Handleregister}>Verify</button>
+
         </div>
         <RegisterImg />
       </div>
