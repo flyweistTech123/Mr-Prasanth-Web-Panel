@@ -1,15 +1,59 @@
 import React, { useState } from 'react'
 import '../Styles/TotalAmountSection.module.css'
 import { TiArrowSortedDown } from "react-icons/ti";
-import { SideBar } from './SideBar';
 import user from '../Assets/Vector.png'
 import user1 from '../Assets/vector1.png'
-import ApexCharts from 'apexcharts'
 import ReactApexChart from 'react-apexcharts';
-import LatestTransactions from './LatestTransactions';
-
+import Modal from 'react-bootstrap/Modal';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 const TotalAmountSection = () => {
+
+
+  const [modalShow, setModalShow] = React.useState(false);
+
+  const [selectedService, setSelectedService] = useState('');
+
+  const handleServiceSelection = (service) => {
+    setSelectedService(service);
+    setModalShow(false); // Close the modal after selection
+  };
+  function PaymentModal(props) {
+
+
+    return (
+      <>
+        <Modal
+          {...props}
+          size="md"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+          style={{ top: '70%', left: '80%', transform: 'translate(-50%, -50%)', width: '435px', height: '221px', borderRadius: '6px', overflow: 'hidden' }}
+        >
+          <Modal.Body>
+            <div className='paymentModal1'>
+              <Link to={'/dashboard'} className='paymentModal3'>
+                <div className='paymentModal2' onClick={() => handleServiceSelection('Credit Card Processing')}>
+                  <h6>Credit Card Processing</h6>
+                </div>
+              </Link>
+              <Link to={'/open-banking-service'} className='paymentModal3'>
+                <div className='paymentModal2' onClick={() => handleServiceSelection('Open Banking Service')}>
+                  <h6>Open Banking Service</h6>
+                </div>
+              </Link>
+              <Link to={'/crypto-payment-proccessing'} className='paymentModal3'>
+                <div className='paymentModal22' onClick={() => handleServiceSelection('Crypto payment processing')}>
+                  <h6>Crypto payment processing</h6>
+                </div>
+              </Link>
+            </div>
+          </Modal.Body>
+        </Modal>
+      </>
+    );
+  }
 
   const [chartData, setChartData] = useState({
     series: [{
@@ -98,6 +142,10 @@ const TotalAmountSection = () => {
 
   return (
     <>
+      <PaymentModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
       <div className='totalamountsection1'>
         <div className='totalamountsection2'>
           <div className='totalamountsection3' >
@@ -113,9 +161,9 @@ const TotalAmountSection = () => {
               </div>
             </div>
           </div>
-          <div className='totalamountsection6'>
+          <div className='totalamountsection6' onClick={() => setModalShow(true)}>
             <h6>Current Service:</h6>
-            <h3>Credit card Processing<TiArrowSortedDown /></h3>
+            <h3>{selectedService || 'Select a Service'}<TiArrowSortedDown /></h3>
           </div>
         </div>
         <div className='totalamountsection7'>

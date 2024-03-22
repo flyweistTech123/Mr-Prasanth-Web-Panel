@@ -6,6 +6,7 @@ import { TfiExport } from "react-icons/tfi";
 import { IoEye } from "react-icons/io5";
 import { PaymentPendingModal } from './PaymentPendingModal';
 import { DeclineModal } from './DeclineModal';
+import { PaymentCompleteModal } from './PaymentCompleteModal';
 
 
 const transactionsData = [
@@ -130,18 +131,39 @@ const getStatusColor = (status) => {
 
 
 const LatestTransactions = () => {
+
+    const [completeModal, setCompleteModal] = useState(false);
+
+
+    const HandleComplete = () => {
+        setCompleteModal(!completeModal);
+    };
     const [pendingModal, setPendingModal] = useState(false);
 
 
     const HandlePending = () => {
         setPendingModal(!pendingModal);
     };
+    const [declineModal, setDeclineModal] = useState(false);
+
+
+    const HandleDecline = () => {
+        setDeclineModal(!declineModal);
+    };
     return (
-        <>  
-        <DeclineModal
-            OpenModal={pendingModal}
-            HandleModal={HandlePending}
-        />
+        <>
+            <DeclineModal
+                OpenModal={declineModal}
+                HandleModal={setDeclineModal}
+            />
+            <PaymentPendingModal
+                OpenModal={pendingModal}
+                HandleModal={setPendingModal}
+            />
+            <PaymentCompleteModal
+                OpenModal={completeModal}
+                HandleModal={setCompleteModal}
+            />
             <div className='latesttransactions1'>
                 <div className='latesttransactions1'>
                     <div className='latesttransactions2'>
@@ -177,7 +199,7 @@ const LatestTransactions = () => {
                                         <td>{transaction.transactionMode}</td>
                                         <td style={{ color: getAmountColor(transaction.amount) }}>{transaction.amount}</td>
                                         <td style={{ color: getStatusColor(transaction.status) }}>{transaction.status}</td>
-                                        <td onClick={HandlePending}><IoEye color='#003466' size={25} /></td>
+                                        <td onClick={transaction.status === 'Pending' ? HandlePending : (transaction.status === 'Cancel' ? HandleDecline : HandleComplete)}><IoEye color='#003466' size={25} /></td>
                                     </tr>
                                 ))}
                             </tbody>

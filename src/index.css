@@ -27,9 +27,10 @@ code {
 
 .dass1{
   display: flex;
-  width: 100%;
-  padding-top: 30px;
+  width: 95%;
+  margin: auto;
   gap: 10px;
+  margin-top: 20px;
 }
 
 
@@ -108,7 +109,7 @@ code {
 
 
 .totalamountsection6{
-  width: 343px;
+  width: 383px;
   height: 124px;
   background-color: #ffffff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
@@ -259,6 +260,17 @@ code {
   margin: 0;
 }
 
+.totalamountsection17 h5{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #000000;
+  margin: 0;
+  margin-top: 30px;
+  padding-left: 40px;
+}
+
 
 .totalamountsection18{
   display: flex;
@@ -273,6 +285,13 @@ code {
   background-color: #FFFFFF;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
+}
+
+
+.totalamountsection20{
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
 }
 
 
@@ -383,4 +402,71 @@ code {
   color: #003466;
   text-decoration: underline;
   margin: 0;
+}
+
+
+
+
+/* Modal */
+
+.paymentModal1{
+
+}
+
+.paymentModal2{
+  border-bottom: 1px solid #D9D9D9;
+  height: 58px;
+  display: flex;
+  align-items: center;
+}
+
+.paymentModal2 h6{
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40.16px;
+  color: #333333;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+.paymentModal22{
+  height: 58px;
+  display: flex;
+  align-items: center;
+}
+
+.paymentModal22:hover{
+  background-color: #003466;
+  color: #FFFFFF;
+}
+
+.paymentModal22 h6:hover{
+  color: #FFFFFF;
+}
+
+.paymentModal2 h6:hover{
+  color: #FFFFFF;
+}
+
+
+.paymentModal2:hover{
+  background-color: #003466;
+  color: #FFFFFF;
+}
+
+.paymentModal22 h6{
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40.16px;
+  color: #333333;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+.paymentModal3{
+  text-decoration: none;
 }

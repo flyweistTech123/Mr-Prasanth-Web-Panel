@@ -6,14 +6,15 @@ import { AllRoutes } from "./Routes/AllRoutes";
 
 function App() {
   return (
-    // <div className="font-poppins">
-    //   <AllRoutes />
-    // </div>
+
 
     <>
-    {/* <Navbar/> */}
-    <Dashboard/>
-    {/* <TotalAmountSection/> */}
+      <div className="font-poppins">
+        <AllRoutes />
+      </div>
+      {/* <Navbar/> */}
+      {/* <Dashboard/> */}
+      {/* <TotalAmountSection/> */}
     </>
   );
 }
